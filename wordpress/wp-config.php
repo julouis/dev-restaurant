@@ -41,14 +41,14 @@ if (!function_exists('getenv_docker')) {
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'lGA28ZsQD2');
+
+define('DB_NAME','lGA28ZsQD2');
 
 /** MySQL database username */
-define('DB_USER', 'lGA28ZsQD2');
+define('DB_USER','lGA28ZsQD2');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'mP8bYj6DIE');
-
+define('DB_PASSWORD','mP8bYj6DIE');
 
 /**
  * Docker image fallback values above are sourced from the official WordPress installation wizard:
@@ -57,13 +57,15 @@ define('DB_PASSWORD', 'mP8bYj6DIE');
  */
 
 /** MySQL hostname */
-define('DB_HOST', 'remotemysql.com');
+
+define('DB_HOST','remotemysql.com');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', getenv_docker('WORDPRESS_DB_CHARSET', 'utf8'));
+define('DB_CHARSET','utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
+define('DB_COLLATE','');
+
 
 /**#@+
  * Authentication Unique Keys and Salts.
