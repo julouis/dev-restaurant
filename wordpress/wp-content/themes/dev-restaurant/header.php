@@ -21,12 +21,12 @@
             </button>
             <div class="collapse navbar-collapse position-relative" id="navbarNavAltMarkup">
                 <div class="navbar-nav position-absolute end-0">
-                    <a class="nav-item nav-link active" href="#">Home LOGO</a>
+                    <a class="nav-item nav-link active" href="#"><i class="fas fa-home"></i></a>
                     <a class="nav-item nav-link" href="#">Our Restaurants</a>
                     <a class="nav-item nav-link" href="#">Menu</a>
                     <a class="nav-item nav-link" href="#">Receipes</a>
                     <a class="nav-item nav-link" href="#">Order</a>
-                    <a class="nav-item nav-link" href="#">Card</a>
+                    <a class="nav-item nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
                 </div>
             </div>
         </nav>
