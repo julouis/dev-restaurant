@@ -14,6 +14,8 @@ function dev_restaurant_register_assets()
     wp_enqueue_style('bootstrap');
 }
 
+wp_enqueue_script('jquery');
+wp_enqueue_script('text/javascript');
 
 add_action('after_setup_theme', 'montheme_supports');
 add_action('wp_enqueue_scripts', 'dev_restaurant_register_assets');
