@@ -41,6 +41,7 @@ if (!function_exists('getenv_docker')) {
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+
 define('DB_NAME','lGA28ZsQD2');
 
 /** MySQL database username */
@@ -56,6 +57,7 @@ define('DB_PASSWORD','mP8bYj6DIE');
  */
 
 /** MySQL hostname */
+
 define('DB_HOST','remotemysql.com');
 
 /** Database Charset to use in creating database tables. */
@@ -63,6 +65,7 @@ define('DB_CHARSET','utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE','');
+
 
 /**#@+
  * Authentication Unique Keys and Salts.
