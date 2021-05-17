@@ -5,7 +5,10 @@
 
 function dev_restaurant_supports()
 {
-    add_theme_support('title_tag');
+    add_theme_support( 'title_tag' );
+    add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'menus' );
+    // register_nav_menu('header', 'En tête du menu');
 }
 
 function dev_restaurant_register_assets()
@@ -24,5 +27,6 @@ function dev_restaurant_register_assets()
 }
 
 
-add_action('after_setup_theme', 'montheme_supports');
+add_action('after_setup_theme', 'dev_restaurant_supports');
 add_action('wp_enqueue_scripts', 'dev_restaurant_register_assets');
+add_filter('wp_title', 'dev_restaurant_title');

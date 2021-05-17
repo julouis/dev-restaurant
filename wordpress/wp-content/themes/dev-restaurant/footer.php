@@ -3,37 +3,36 @@
         <footer class="d-flex flex-column bg-dark lightGrey ">
             
             <div class="d-flex align-items-stretch p-3 flex-wrap">
-                <div class="d-flex col flex-xl-column flex-wrap border border-danger">
-                    <div class="restoInfo d-flex flex-column p-2 col-xl col-sm-6 justify-content-center ">
+                <div class="d-flex col-md flex-xl-column flex-wrap">
+                    <div class="restoInfo d-flex flex-column p-2 col justify-content-center ">
                         <h4 class="text-white ">Dev Restaurant</h4>
                         <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores velit natus autem officia laborum quam veniam, vero voluptatibus molestias quos reprehenderit perspiciatis incidunt, facilis unde.</p>
                     </div>
-                    
                     <div class=" d-flex socialNetwork p-2 col justify-content-sm-center align-items-sm-center  justify-content-xl-start align-items-xl-start  ">
-                            <!-- facebook -->
-                                <i class="fab fa-facebook-f d-flex justify-content-center align-items-center rounded-circle iconFooterSize m-1 bg-blue"  ></i>
+                        <!-- facebook -->
+                            <i class="fab fa-facebook-f d-flex justify-content-center align-items-center rounded-circle iconFooterSize m-1 bg-blue"  ></i>
+                        
+                        <!-- twitter -->
+                        <div class=" ">
+                            <i class="fab fa-twitter d-flex justify-content-center align-items-center bg-info rounded-circle iconFooterSize m-1"></i>
                             
-                            <!-- twitter -->
-                            <div class=" ">
-                                <i class="fab fa-twitter d-flex justify-content-center align-items-center bg-info rounded-circle iconFooterSize m-1"></i>
-                                
-                            </div>
-    
-                            <!-- instagram -->
-                            <div class="">
-                                <i class="fab fa-instagram d-flex justify-content-center align-items-center bg-danger rounded-circle iconFooterSize m-1 "></i>
-            
-                            </div>
-                            
-                            <!-- linkedin -->
-                            <div class="">
-                                <i class="fab fa-linkedin-in d-flex justify-content-center align-items-center bg-primary rounded-circle iconFooterSize m-1 "></i>
-                               
-                            </div>
-    
+                        </div>
+
+                        <!-- instagram -->
+                        <div class="">
+                            <i class="fab fa-instagram d-flex justify-content-center align-items-center bg-danger rounded-circle iconFooterSize m-1 "></i>
+        
+                        </div>
+                        
+                        <!-- linkedin -->
+                        <div class="">
+                            <i class="fab fa-linkedin-in d-flex justify-content-center align-items-center bg-primary rounded-circle iconFooterSize m-1 "></i>
+                           
+                        </div>
+
                     </div > 
                 </div>
-                <div class="openHours d-flex flex-column p-4 col">
+                <div class="openHours d-flex flex-column p-4 col  ">
                     <h6 class="text-white ">Open hours</h6>
                     <div class="d-flex justify-content-center align-items-center ">
 
