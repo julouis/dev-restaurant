@@ -8,6 +8,23 @@ h1 {
 	color: red;
 }
 
+.iconFooterSize{
+	width: 32px;
+	height: 32px;
+}
+
+.bg-blue{
+	background-color: blue;
+}
+
+.imgFooterSize{
+	width: 80px;
+	height: 80px;
+}
+
+.lightGrey{
+	color: lightgrey;
+}
 .navbar {
 	height: 50px;
 }
