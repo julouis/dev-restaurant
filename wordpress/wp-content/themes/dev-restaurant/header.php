@@ -10,23 +10,26 @@
     <?php wp_head() ?>
 </head>
 
-<body>
-    <div class="container">
+<div class="container">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">Dev Restaurant</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                 </span>
             </button>
             <div class="collapse navbar-collapse position-relative" id="navbarNavAltMarkup">
-                <div class="navbar-nav position-absolute end-0">
-                    <a class="nav-item nav-link active" href="#"><i class="fas fa-home"></i></a>
-                    <a class="nav-item nav-link" href="#">Our Restaurants</a>
-                    <a class="nav-item nav-link" href="#">Menu</a>
-                    <a class="nav-item nav-link" href="#">Receipes</a>
-                    <a class="nav-item nav-link" href="#">Order</a>
-                    <a class="nav-item nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                <div class="navbar-nav position-absolute end-0 ">
+                    <a class="nav-item nav-link active px-4" href="#"><i class="fas fa-home"></i></a>
+                    <a class="nav-item nav-link px-4" href="#">Our Restaurants</a>
+                    <a class="nav-item nav-link px-4" href="#">Menu</a>
+                    <a class="nav-item nav-link px-4" href="#">Receipes</a>
+                    <a class="nav-item nav-link px-4" href="#">Order <i class="fas fa-shopping-cart"></i></a>
+
                 </div>
             </div>
-        </nav>
+
+    </header>
+
+    <body>
