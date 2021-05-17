@@ -4,6 +4,7 @@ Theme Name: dev-restaurant
 */
 
 h1 {
+	padding-top: 300px;
 	color: red;
 }
 
@@ -23,4 +24,7 @@ h1 {
 
 .lightGrey{
 	color: lightgrey;
+}
+.navbar {
+	height: 50px;
 }
