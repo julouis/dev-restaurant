@@ -23,6 +23,11 @@ function dev_restaurant_register_assets()
     wp_enqueue_script('bootstrap');
 }
 
+function devrestaurant_title($title)
+{
+    return 'Salut';
+}
 
 add_action('after_setup_theme', 'montheme_supports');
 add_action('wp_enqueue_scripts', 'dev_restaurant_register_assets');
+add_filter('wp_title', 'devrestaurant_title');
