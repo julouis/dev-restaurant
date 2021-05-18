@@ -8,27 +8,30 @@ h1 {
 	color: red;
 }
 
-.iconFooterSize{
+.iconFooterSize {
 	width: 32px;
 	height: 32px;
 }
 
-.bg-blue{
+.bg-blue {
 	background-color: blue;
 }
 
-.imgFooterSize{
+.imgFooterSize {
 	width: 80px;
 	height: 80px;
 }
 
-.lightGrey{
+.lightGrey {
 	color: lightgrey;
 }
 .navbar {
 	height: 50px;
 }
 
-i {
-	font-size: 20px;
+.navbar-collapse {
+	justify-content: flex-end;
 }
+
+/* .navbar-nav {
+} */
