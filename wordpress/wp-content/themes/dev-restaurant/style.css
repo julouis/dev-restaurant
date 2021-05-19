@@ -33,5 +33,15 @@ h1 {
 	justify-content: flex-end;
 }
 
-/* .navbar-nav {
-} */
+.menu-item {
+	justify-content: flex-end;
+}
+
+.orderBox {
+	background-color: aqua;
+	padding: 10px;
+}
+
+.orderBox::after {
+	background-color: transparent;
+}

@@ -29,30 +29,21 @@ function devrestaurant_title($title)
     return 'Salut';
 }
 
-function dev_restaurant_menu_class($classes)
-{
-
-    $classes[] = 'navbar-nav';
-    return $classes;
-}
-
-function dev_restaurant_menu_link_class($classes)
-{
-
-    $attrs['class'] = 'nav-link';
-    return $attrs;
-}
-
-
-
 add_action('after_setup_theme', 'dev_restaurant_supports');
 add_action('wp_enqueue_scripts', 'dev_restaurant_register_assets');
 add_filter('wp_title', 'dev_restaurant_title');
-add_filter('nav_menu_css_class', 'dev_restaurant_menu_class');
-add_filter('nav_menu_link_attributes', 'dev_restaurant_menu_link_class');
+
 
 function register_navwalker()
 {
     require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
 add_action('after_setup_theme', 'register_navwalker');
+
+function prefix_modify_nav_menu_args($args)
+{
+    return array_merge($args, array(
+        'walker' => new WP_Bootstrap_Navwalker(),
+    ));
+}
+add_filter('wp_nav_menu_args', 'prefix_modify_nav_menu_args');
