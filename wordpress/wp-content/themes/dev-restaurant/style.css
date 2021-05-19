@@ -3,11 +3,6 @@ Theme Name: dev-restaurant
 
 */
 
-h1 {
-	padding-top: 300px;
-	color: red;
-}
-
 .iconFooterSize {
 	width: 32px;
 	height: 32px;
@@ -47,11 +42,9 @@ h1 {
 }
 
 /* section restaurant */
-.allRestaurant{
+.allRestaurant {
 	background-image: url(../../../wp-content/themes/dev-restaurant/assets/images/burger\ party.png);
 	/* background-color: transparent; */
-	
-	background-size:contain;
+
+	background-size: contain;
 }
-
-
