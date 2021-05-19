@@ -10,6 +10,10 @@
     <?php wp_head() ?>
 </head>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> Rekha
 
 <header>
 

@@ -43,6 +43,7 @@
                 <p class=" m-0">Closed </p>
 
             </div>
+<<<<<<< HEAD
             <div class="d-flex justify-content-center align-items-center ">
                 <i class="fas fa-clock me-2"></i>
                 <p class=" m-0">Tue-Fri </p>
@@ -101,6 +102,10 @@
     </div>
 </footer>
 
+=======
+        </footer>
+    
+>>>>>>> Rekha
 </body>
 
 </html>
