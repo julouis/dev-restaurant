@@ -45,3 +45,13 @@ h1 {
 .orderBox::after {
 	background-color: transparent;
 }
+
+/* section restaurant */
+.allRestaurant{
+	background-image: url(../../../wp-content/themes/dev-restaurant/assets/images/burger\ party.png);
+	/* background-color: transparent; */
+	
+	background-size:contain;
+}
+
+
