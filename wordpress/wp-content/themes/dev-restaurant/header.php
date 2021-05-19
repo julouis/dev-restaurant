@@ -10,7 +10,7 @@
     <?php wp_head() ?>
 </head>
 
-<div class="container">
+
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">

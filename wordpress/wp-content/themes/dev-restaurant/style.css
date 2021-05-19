@@ -33,12 +33,24 @@ i {
 	font-size: 20px;
 }
 
+
+
 /* section restaurant */
+
+/* Ne fonctionne pas encore
+.restaurant article:nth-child(elven) {
+	display: flex;
+	flex-direction: row-reverse;
+} */
+
 .allRestaurant{
 	background-image: url(../../../wp-content/themes/dev-restaurant/assets/images/burger\ party.png);
-	/* background-color: transparent; */
-	
+	background-color: lightgray;
 	background-size:contain;
 }
 
+.miniImgResto, .txtResto{
+	height: 400px;
+	width: 400px;
+}
 
