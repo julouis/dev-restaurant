@@ -10,11 +10,6 @@
     <?php wp_head() ?>
 </head>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> Rekha
-
 <header>
 
     <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
