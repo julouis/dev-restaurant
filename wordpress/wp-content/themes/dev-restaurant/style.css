@@ -32,3 +32,13 @@ h1 {
 i {
 	font-size: 20px;
 }
+
+/* section restaurant */
+.allRestaurant{
+	background-image: url(../../../wp-content/themes/dev-restaurant/assets/images/burger\ party.png);
+	/* background-color: transparent; */
+	
+	background-size:contain;
+}
+
+

@@ -100,7 +100,8 @@
                 <p class="p-4">© 2021 All Right Reserved. Designed By Devdesign Studio</p>
             </div>
         </footer>
-    </div>
+    </div> 
+    <!-- fermeture container -->
 </body>
 
 </html>
