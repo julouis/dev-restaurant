@@ -1,10 +1,5 @@
 <?php get_header() ?>
 
-
-<!-- 
-Bonjour tout le monde : <?php wp_title(); ?> -->
-
-
 <div class="allRestaurant">
     <div class="container d-flex flex-column justify-content-center align-items-center p-5 restaurant">
         <h2 class="m-5" >Our restaurants</h2>

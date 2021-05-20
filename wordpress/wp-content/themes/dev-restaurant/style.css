@@ -62,3 +62,12 @@ Theme Name: dev-restaurant
 	width: 400px;
 }
 
+.heroDark{
+	background: rgba(0, 0, 0, 0.349);
+	
+}
+
+.heroSize{
+	height: 800px;
+	overflow: hidden;
+}
