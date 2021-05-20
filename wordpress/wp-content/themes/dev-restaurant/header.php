@@ -10,7 +10,6 @@
     <?php wp_head() ?>
 </head>
 
-
 <header>
 
     <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
