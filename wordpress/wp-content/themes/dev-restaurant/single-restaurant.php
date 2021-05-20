@@ -1,13 +1,14 @@
+<?php /* Template name: restaurant */ ?>
+
 <?php get_header() ?>
 
-    <main>
+    <main class="container">
 
         <?php while(have_posts()) : the_post(); ?>
-            <article class="">
+            
                 <h1><?php the_title(); ?></h1>
                 <?php the_content();?>
                 
-            </article>
         
         <?php endwhile ?>
         

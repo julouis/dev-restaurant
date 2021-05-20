@@ -26,15 +26,12 @@ Bonjour tout le monde : <?php wp_title(); ?> -->
                             </div>
                         </div>
                     </div>
-                </div>
-                    
-                
-                
-                
+                </div> 
             </article>
         
         <?php endwhile ?>
     </div>
+    
     
         
 </div>

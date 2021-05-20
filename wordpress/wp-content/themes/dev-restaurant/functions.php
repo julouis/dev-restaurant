@@ -47,3 +47,19 @@ function prefix_modify_nav_menu_args($args)
     ));
 }
 add_filter('wp_nav_menu_args', 'prefix_modify_nav_menu_args');
+
+// afficher les derniers articles d'une catégorie
+// Utilisation : wppln_last_posts('ID DE LA CATEGORIE','NBRE DE POSTS A RETOURNER','true/false pour AFFICHER LE RESUME');
+function wppln_last_posts($cat_id,$nbr_post,$excerpt) { 
+	$query = new WP_Query("cat=$cat_id&posts_per_page=$nbr_post");
+	echo '<ul>';
+	while($query -> have_posts()) : 
+		$query->the_post();
+		echo '<li><a href="'.get_the_permalink().'" rel="bookmark">'.get_the_title().'</a></li>';
+		if($excerpt == 'true') :
+			echo '<ul><li>'.get_the_excerpt().'</li></ul>';
+		endif;
+	endwhile;
+	wp_reset_postdata();
+	echo '</ul>';
+}
