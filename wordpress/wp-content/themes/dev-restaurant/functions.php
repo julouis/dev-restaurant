@@ -63,3 +63,6 @@ function wppln_last_posts($cat_id,$nbr_post,$excerpt) {
 	wp_reset_postdata();
 	echo '</ul>';
 }
+
+// ACF
+if (!function_exists('get_field')) return;

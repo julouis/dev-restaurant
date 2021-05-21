@@ -64,6 +64,10 @@ Theme Name: dev-restaurant
 	width: 400px;
 }
 
+.hero{
+	width: 100%;
+}
+
 .heroDark{
 	background: rgba(0, 0, 0, 0.349);
 	
@@ -73,3 +77,12 @@ Theme Name: dev-restaurant
 	height: 800px;
 	overflow: hidden;
 }
+
+.resto > h1{
+	font-size: 10rem;
+}
+
+.resto > h3{
+	font-size: 3rem;
+}
+
