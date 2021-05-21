@@ -52,9 +52,11 @@ Theme Name: dev-restaurant
 } */
 
 .allRestaurant{
+	
 	background-image: url(../../../wp-content/themes/dev-restaurant/assets/images/burger\ party.png);
-	background-color: lightgray;
+	/* background-color: lightgray; */
 	background-size:contain;
+	opacity: 0.1;
 }
 
 .miniImgResto, .txtResto{
