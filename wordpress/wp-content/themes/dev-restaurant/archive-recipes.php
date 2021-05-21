@@ -1,8 +1,9 @@
 <?php get_header() ?>
 
-<?php wp_nav_menu();?>
 
-<h1> Recipes Page by Rekha</h1>
+<?php while (have_posts()) : the_post(); ?>
+
+<?php endwhile ?>
 
 
 <? get_footer() ?>
