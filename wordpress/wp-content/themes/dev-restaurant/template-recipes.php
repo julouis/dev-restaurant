@@ -14,6 +14,8 @@ if ($the_query->have_posts()) :
         $the_query->the_post();
 ?>
 
+        <h1>LOL</h1>
+
         <article class=" article d-flex  m-5">
             <div class="  m-3 container ">
                 <div class="  d-flex flex-wrap justify-content-center align-items-center  ">
