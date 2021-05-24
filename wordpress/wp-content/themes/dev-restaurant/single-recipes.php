@@ -1,7 +1,9 @@
 <?php
-// Template Name: Recipes
+// Template Name: single_recipe
 // Template Post Type: post, page 
 ?>
+
+
 <?php get_header() ?>
 
 

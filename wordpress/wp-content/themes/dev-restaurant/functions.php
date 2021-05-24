@@ -36,7 +36,7 @@ function dev_restaurant_register_assets()
 }
 
 
-add_action('init', 'dev_restaurant_init'); */
+add_action('init', 'dev_restaurant_init');
 
 
 function recipesPostType()
@@ -72,7 +72,7 @@ function recipesTaxonomy()
     );
     register_taxonomy('Recettes', array('recipes'), $args);
 }
-add_action('init', 'recipesTaxonomy');
+add_action('init', 'recipesTaxonomy'); */
 
 
 
