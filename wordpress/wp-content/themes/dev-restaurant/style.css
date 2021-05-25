@@ -45,12 +45,6 @@ Theme Name: dev-restaurant
 
 /* section restaurant */
 
-/* Ne fonctionne pas encore
-.restaurant article:nth-child(elven) {
-	display: flex;
-	flex-direction: row-reverse;
-} */
-
 .allRestaurant{
 	
 	background-image: url(../../../wp-content/themes/dev-restaurant/assets/images/burger\ party.png);
@@ -65,13 +59,9 @@ Theme Name: dev-restaurant
 }
 
 .hero{
-	width: 100%;
+	height: 100%;
 }
 
-.heroDark{
-	background: rgba(0, 0, 0, 0.349);
-	
-}
 
 .heroSize{
 	height: 800px;
@@ -86,3 +76,30 @@ Theme Name: dev-restaurant
 	font-size: 3rem;
 }
 
+.cardPresentation{
+	max-width: 900px;
+}
+
+.banerTop{
+	max-height: 700px;
+	overflow: hidden;
+}
+
+.banerTop > img{
+	size: cover;
+}
+
+.banerFilter{
+	background-color: rgba(0, 0, 0, 0.315);
+	max-height: 700px;
+	overflow: hidden;
+}
+
+.mapLocation{
+	width: 100%;
+}
+
+.imgDicorverMenu > img{
+	width: 50%;
+	padding: .3rem;
+}

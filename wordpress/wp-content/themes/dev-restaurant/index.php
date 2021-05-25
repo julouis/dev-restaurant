@@ -7,7 +7,7 @@
 //         while($the_query -> the_post(): the_post() ?> -->
 
 
-<div class="allRestaurant">
+<div class="allRestaurant" id="restaurants">
     <div class="container d-flex flex-column justify-content-center align-items-center p-5 restaurant">
         <h2 class="m-5" >Our restaurants</h2>
         
@@ -19,7 +19,7 @@
                 while($the_query -> have_posts()) :
                     $the_query -> the_post();
         ?>
-
+            
        
             <article class=" article d-flex  m-5">
                 <div class="  m-3 container " >
