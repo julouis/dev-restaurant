@@ -2,9 +2,14 @@
 // Template Name: Resto
 // Template Post Type: post 
 
+//image présentation
+$imagePresentation = get_field('image_presentation_restaurant');
+$urlImgPresentation = $imagePresentation["url"];
+
+
 ?>
 
-    <div class="">
+    <div class="resto">
         <?php while(have_posts()) : the_post(); ?>
             <div class=" banerTop text-white ">
                 
@@ -40,12 +45,8 @@
                     
                     <div class="cardPresentation card text-center m-5 " >
                             <div class="row g-0">
-                                <div class="col-6">
-                                    <?php 
-                                        $imagePresentation = the_field('image_presentation_restaurant');
-                                        $urlImgPresentation = $imagePresentation['url'];
-                                    ?>
-                                    <img src="<?php echo $urlImgPresentation; ?>" />
+                                <div class="col-6 imgPresentation">
+                                    <img src="<?php echo $urlImgPresentation; ?>" class=""/>
                                     
                                 </div>
                                 <div class="col-6 p-5">
@@ -86,25 +87,20 @@
             <div class="location">
                 
                 <h3>Location</h3>
-                <div class="bg-success mapLocation">
-                    <?php the_field('location'); ?>    
+                <div class="bg-success ">
+                    <?php //the_field('location'); ?>    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80996.1150898469!2d5.528883916493495!3d50.624727857791925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f74b8eacfcfb%3A0x40099ab2f4d6b40!2zTGnDqGdl!5e0!3m2!1sen!2sbe!4v1622024892669!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="bg-danger mapLocation">
-                
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80996.11491285417!2d5.529055876339316!3d50.62472796054417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f74b8eacfcfb%3A0x40099ab2f4d6b40!2zTGnDqGdl!5e0!3m2!1sen!2sbe!4v1621943231317!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  
-                </div>
-
 
             </div>
             
-
             <div class="booking ">
                 <img src="" alt="">
 
                 <div class="d-flex flex-column justify-centent-center align-items-center p-5">
 
                     <h3 class=" m-5">Reserve a table</h3>
-                    <div class="  m-3 " >
+                    <div class=" boxReservation m-3 " >
                         <div class="  d-flex flex-wrap justify-content-center align-items-center  ">
                             <div class="col d-flex justify-content-center align-items-center overflow-visible miniImgResto ">
                                 <?php the_post_thumbnail(array(700, 700)) ?>
@@ -179,29 +175,29 @@
                     </div>
                     <div class=" d-flex flex-wrap justify-content-center align-items-center p-5">                       
 
-                    <?php
-                        $the_query = new WP_Query(array('post_id' => "200" ));
-                        
-                        if($the_query -> have_posts()) :
-                            
+                        <?php
+                            // selection du post dicover our menu par l'id
+                            $the_query = new WP_Query(array('post_id' => "200" ));
+                            if($the_query -> have_posts()) :
                                 $the_query -> the_post();
-                    ?>
-             
-                            
-                        <div class=" text-center m-5 " >
-                            <div class="row g-0">
-                                <div class="col-6 imgDicorverMenu d-flex flex-wrap">
+
+                            // image discover our menu 
+                            $imageDiscoverMenu = get_field('images_discover_menu');
+                            $urlImgDiscoverMenu = $imageDiscoverMenu['url'];
+                        ?>   
+                        <div class=" text-center m-5 boxMenu " >
+                            <div class="row g-0 d-flex flex-wrap justify-content-center align-items-center  ">
+                                <div class="col imgDicorverMenu d-flex flex-wrap justify-centent-center align-items-center">
                                     <?php 
-                                        $imageDiscoverMenu = the_field('images_discover_menu');
-                                        $urlImgDiscoverMenu = $imageDiscoverMenu['url'];
+                                        
                                     ?>
-                                    <img src="http://localhost/wp-content/uploads/2021/05/burger-1.jpg" />
-                                    <img src="http://localhost/wp-content/uploads/2021/05/burger-1.jpg" />
-                                    <img src="http://localhost/wp-content/uploads/2021/05/burger-1.jpg" />
-                                    <img src="http://localhost/wp-content/uploads/2021/05/burger-1.jpg" />
+                                    <img src="<?php echo $urlImgDiscoverMenu ?>" />
+                                    <img src="<?php echo $urlImgDiscoverMenu ?>" />
+                                    <img src="<?php echo $urlImgDiscoverMenu ?>" />
+                                    <img src="<?php echo $urlImgDiscoverMenu ?>" />
                                     
                                 </div>
-                                <div class="col-6">
+                                <div class="col">
                                     <div class="card-body ">
                                         <h5 class="card-title"><?php the_field('slogan_discover_menu') ?></h5>
                                         <h4 class="card-title"><?php the_field('title_discover_menu') ?></h4>
@@ -211,25 +207,60 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                                    
+                        </div>                        
                         <?php  endif; ?>           
-                        
-                    </div>
 
                     </div>
-
+                    
                 </div>
-
-
-
             </div>
 
-            
-
-            <div>
+            <div class=" recipesMini d-flex flex-column align-items-center bg-light">
                 <img src="" alt="">
-                <h3>Recipes Blog</h3>
+                <div class="mt-5 text-center">
+                    <h5>Slogen</h5>
+                    <h4>Recipes Blog</h4>
+                </div>
+                <div class="carMiniRecipe d-flex flex-wrap justify-content-center">
+                    <?php
+                        $the_query = new WP_Query(array(
+                            'category_name' => 'recipes',
+                            'orderby'=> 'post_date', 
+                            'order' => 'DESC',
+                            'posts_per_page' => '4'
+                        ));
+                        
+                        if($the_query -> have_posts()) :
+                            while($the_query -> have_posts()) :
+                                $the_query -> the_post();
+                    ?>
+                        <div class=" recipeCard">
+                            
+                            <div class=" card m-3">
+                                <div class="imgRecipeCard">
+                                    <?php the_post_thumbnail(array(300,500)) ?>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text ">
+                                        <small class="text-muted">
+                                        <i class="fas fa-clock me-2 "></i>
+                                            Last updated 3 mins ago
+                                        </small>
+                                    </p>
+                                    <h3><?php the_title(); ?></h3>
+                                    <?php the_excerpt();?>
+                                    <div class="d-flex justify-content-around">
+                                        <p class="border"></p>
+                                        <hr class="border border-white flex-grow-1 ">
+                                        <a href="<?php the_permalink()?>" role="button" class="fw-bold text-uppercase text-dark" > Read More </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    <?php endwhile; endif; ?>
+
+                </div>
 
             </div>
         <?php endwhile; ?>
