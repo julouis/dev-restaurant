@@ -41,8 +41,6 @@ Theme Name: dev-restaurant
 	background-color: transparent;
 }
 
-
-
 /* section restaurant */
 
 /* Ne fonctionne pas encore
@@ -51,38 +49,41 @@ Theme Name: dev-restaurant
 	flex-direction: row-reverse;
 } */
 
-.allRestaurant{
-	
+.allRestaurant {
 	background-image: url(../../../wp-content/themes/dev-restaurant/assets/images/burger\ party.png);
 	/* background-color: lightgray; */
-	background-size:contain;
-	
+	background-size: contain;
 }
 
-.miniImgResto, .txtResto{
+.miniImgResto,
+.txtResto {
 	height: 400px;
 	width: 400px;
 }
 
-.hero{
+.hero {
 	width: 100%;
 }
 
-.heroDark{
+.heroDark {
 	background: rgba(0, 0, 0, 0.349);
-	
 }
 
-.heroSize{
+.heroSize {
 	height: 800px;
 	overflow: hidden;
 }
 
-.resto > h1{
+.resto > h1 {
 	font-size: 10rem;
 }
 
-.resto > h3{
+.resto > h3 {
 	font-size: 3rem;
 }
 
+/* SINGLE DESIGN RECIPE */
+
+.recipe-container {
+	max-width: 1000px;
+}

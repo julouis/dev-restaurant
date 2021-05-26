@@ -27,14 +27,23 @@ $recipeImage1Size = $recipeImage1['url'];
 
 ?>
 
-<div class="container">
+<div class="container recipe-container">
 
     <h1><?php echo $recipeTitle; ?></h1>
 
     <p><?php echo $recipeIntroText ?></p>
 
-    <img src="<?php echo $recipeImage1Size ?>" class="img-fluid" alt="Responsive image">
+    <img src="<?php echo $recipeImage1['url'] ?>" class="img-fluid" alt="Responsive image">
 
+    <h2>Ingrédients</h2>
+
+    <?php echo $recipeIngredient ?>
+
+    <img src="<?php echo $recipeImage2['url'] ?>" class="img-fluid" alt="Responsive image">
+
+    <h2>Instructions</h2>
+
+    <p><?php echo $recipeInstructions ?></p>
 
 
 
