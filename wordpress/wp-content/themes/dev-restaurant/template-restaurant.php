@@ -89,7 +89,7 @@ $urlImgPresentation = $imagePresentation["url"];
                 <h3>Location</h3>
                 <div class="bg-success ">
                     <?php //the_field('location'); ?>    
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80996.1150898469!2d5.528883916493495!3d50.624727857791925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f74b8eacfcfb%3A0x40099ab2f4d6b40!2zTGnDqGdl!5e0!3m2!1sen!2sbe!4v1622024892669!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80996.1150898469!2d5.528883916493495!3d50.624727857791925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f74b8eacfcfb%3A0x40099ab2f4d6b40!2zTGnDqGdl!5e0!3m2!1sen!2sbe!4v1622024892669!5m2!1sen!2sbe" class="mapLocation"></iframe>
                 </div>
 
             </div>
@@ -182,20 +182,27 @@ $urlImgPresentation = $imagePresentation["url"];
                                 $the_query -> the_post();
 
                             // image discover our menu 
-                            $imageDiscoverMenu = get_field('images_discover_menu');
-                            $urlImgDiscoverMenu = $imageDiscoverMenu['url'];
+                            $imageDiscoverMenu1 = get_field('image_one_discover_menu');
+                            $urlImgDiscoverMenu1 = $imageDiscoverMenu1['url'];
+
+                            $imageDiscoverMenu2 = get_field('image_two_discover_menu');
+                            $urlImgDiscoverMenu2 = $imageDiscoverMenu2['url'];
+
+                            $imageDiscoverMenu3 = get_field('image_three_discover_menu');
+                            $urlImgDiscoverMenu3 = $imageDiscoverMenu3['url'];
+
+                            $imageDiscoverMenu4 = get_field('image_four_discover_menu');
+                            $urlImgDiscoverMenu4 = $imageDiscoverMenu4['url'];
                         ?>   
                         <div class=" text-center m-5 boxMenu " >
                             <div class="row g-0 d-flex flex-wrap justify-content-center align-items-center  ">
                                 <div class="col imgDicorverMenu d-flex flex-wrap justify-centent-center align-items-center">
-                                    <?php 
-                                        
-                                    ?>
-                                    <img src="<?php echo $urlImgDiscoverMenu ?>" />
-                                    <img src="<?php echo $urlImgDiscoverMenu ?>" />
-                                    <img src="<?php echo $urlImgDiscoverMenu ?>" />
-                                    <img src="<?php echo $urlImgDiscoverMenu ?>" />
                                     
+                                    <img src="<?php echo $urlImgDiscoverMenu1 ?>" />
+                                    <img src="<?php echo $urlImgDiscoverMenu2 ?>" />
+                                    <img src="<?php echo $urlImgDiscoverMenu3 ?>" />
+                                    <img src="<?php echo $urlImgDiscoverMenu4 ?>" />
+                                     
                                 </div>
                                 <div class="col">
                                     <div class="card-body ">
