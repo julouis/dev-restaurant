@@ -41,19 +41,17 @@ Theme Name: dev-restaurant
 	background-color: transparent;
 }
 
-
-
 /* section restaurant */
 
 .allRestaurant{
 	
 	background-image: url(../../../wp-content/themes/dev-restaurant/assets/images/burger\ party.png);
 	/* background-color: lightgray; */
-	background-size:contain;
-	
+	background-size: contain;
 }
 
-.miniImgResto, .txtResto{
+.miniImgResto,
+.txtResto {
 	height: 400px;
 	width: 400px;
 }
@@ -63,16 +61,16 @@ Theme Name: dev-restaurant
 }
 
 
-.heroSize{
+.heroSize {
 	height: 800px;
 	overflow: hidden;
 }
 
-.resto > h1{
+.resto > h1 {
 	font-size: 10rem;
 }
 
-.resto > h3{
+.resto > h3 {
 	font-size: 3rem;
 }
 
@@ -141,4 +139,23 @@ Theme Name: dev-restaurant
 
 .imgRecipeCard > img{
 	width: 100%;
+}
+/* SINGLE POST RECIPE */
+
+.single-recipe-container {
+	position: static;
+	z-index: 0;
+	left: 0;
+	width: 100%;
+	background: linear-gradient(0deg, white 75%, black 25%);
+}
+
+.hachures-blanches {
+	background-image: url("./assets/images/hachures-blanches.png");
+	transform: rotate(180deg);
+	background-repeat: repeat-x;
+	position: relative;
+	bottom: 150px;
+	z-index: 1;
+	height: 10vh;
 }

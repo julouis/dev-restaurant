@@ -24,10 +24,57 @@ function dev_restaurant_register_assets()
     wp_enqueue_script('bootstrap');
 }
 
-function devrestaurant_title($title)
+
+
+/* function dev_restaurant_init()
 {
-    return 'Salut';
+    register_taxonomy('recipe', 'post', [
+        'labels' => [
+            'name' => 'Recettes',
+        ]
+    ]);
 }
+
+
+add_action('init', 'dev_restaurant_init');
+
+
+function recipesPostType()
+{
+    $args = array(
+        'labels' => array(
+            'name' => 'Recipes',
+            'singular_name' => 'Recipe'
+        ),
+        'hierarchical' => true,
+        'menu_icon' => 'dashicons-food',
+        'public' => true,
+        'has_archive' => true,
+        'supports' => array('title', 'editor', 'thumbnail'),
+
+
+    );
+    register_post_type('recipes', $args);
+}
+
+add_action('init', 'recipesPostType');
+
+function recipesTaxonomy()
+{
+    $args = array(
+        'labels' => array(
+            'name' => 'Type de plat',
+            'singular_name' => 'Nom du plat',
+        ),
+        'public' => true,
+        'hierarchical' => false,
+
+    );
+    register_taxonomy('Recettes', array('recipes'), $args);
+}
+add_action('init', 'recipesTaxonomy'); */
+
+
 
 add_action('after_setup_theme', 'dev_restaurant_supports');
 add_action('wp_enqueue_scripts', 'dev_restaurant_register_assets');
@@ -50,18 +97,19 @@ add_filter('wp_nav_menu_args', 'prefix_modify_nav_menu_args');
 
 // afficher les derniers articles d'une catégorie
 // Utilisation : wppln_last_posts('ID DE LA CATEGORIE','NBRE DE POSTS A RETOURNER','true/false pour AFFICHER LE RESUME');
-function wppln_last_posts($cat_id,$nbr_post,$excerpt) { 
-	$query = new WP_Query("cat=$cat_id&posts_per_page=$nbr_post");
-	echo '<ul>';
-	while($query -> have_posts()) : 
-		$query->the_post();
-		echo '<li><a href="'.get_the_permalink().'" rel="bookmark">'.get_the_title().'</a></li>';
-		if($excerpt == 'true') :
-			echo '<ul><li>'.get_the_excerpt().'</li></ul>';
-		endif;
-	endwhile;
-	wp_reset_postdata();
-	echo '</ul>';
+function wppln_last_posts($cat_id, $nbr_post, $excerpt)
+{
+    $query = new WP_Query("cat=$cat_id&posts_per_page=$nbr_post");
+    echo '<ul>';
+    while ($query->have_posts()) :
+        $query->the_post();
+        echo '<li><a href="' . get_the_permalink() . '" rel="bookmark">' . get_the_title() . '</a></li>';
+        if ($excerpt == 'true') :
+            echo '<ul><li>' . get_the_excerpt() . '</li></ul>';
+        endif;
+    endwhile;
+    wp_reset_postdata();
+    echo '</ul>';
 }
 
 // ACF
