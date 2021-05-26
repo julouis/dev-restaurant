@@ -82,8 +82,22 @@ Theme Name: dev-restaurant
 	font-size: 3rem;
 }
 
-/* SINGLE DESIGN RECIPE */
+/* SINGLE POST RECIPE */
 
-.recipe-container {
-	max-width: 1000px;
+.single-recipe-container {
+	position: static;
+	z-index: 0;
+	left: 0;
+	width: 100%;
+	background: linear-gradient(0deg, white 75%, black 25%);
+}
+
+.hachures-blanches {
+	background-image: url("./assets/images/hachures-blanches.png");
+	transform: rotate(180deg);
+	background-repeat: repeat-x;
+	position: relative;
+	bottom: 150px;
+	z-index: 1;
+	height: 10vh;
 }

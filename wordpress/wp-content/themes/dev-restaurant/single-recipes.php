@@ -26,27 +26,32 @@ $recipeImage1Size = $recipeImage1['url'];
 
 
 ?>
+<div class="single-recipe-container">
 
-<div class="container recipe-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h1><?php echo $recipeTitle; ?></h1>
 
-    <h1><?php echo $recipeTitle; ?></h1>
+                <p><?php echo $recipeIntroText ?></p>
 
-    <p><?php echo $recipeIntroText ?></p>
+                <img src="<?php echo $recipeImage1['url'] ?>" class="img-fluid recipe-image-1" alt="Responsive image">
 
-    <img src="<?php echo $recipeImage1['url'] ?>" class="img-fluid" alt="Responsive image">
+                <div class="hachures-blanches"></div>
 
-    <h2>Ingrédients</h2>
+                <h2>Ingrédients</h2>
 
-    <?php echo $recipeIngredient ?>
+                <?php echo $recipeIngredient ?>
 
-    <img src="<?php echo $recipeImage2['url'] ?>" class="img-fluid" alt="Responsive image">
+                <img src="<?php echo $recipeImage2['url'] ?>" class="img-fluid" alt="Responsive image">
 
-    <h2>Instructions</h2>
+                <h2>Instructions</h2>
 
-    <p><?php echo $recipeInstructions ?></p>
-
-
-
+                <p><?php echo $recipeInstructions ?></p>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
 </div>
-
 <?php get_footer() ?>
