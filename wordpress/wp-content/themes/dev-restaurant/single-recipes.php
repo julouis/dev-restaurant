@@ -27,7 +27,7 @@ $recipeImage1Size = $recipeImage1['url'];
 
 ?>
 <div class="single-recipe-container">
-
+    <div class="hachures-blanches"></div>
     <div class="container">
         <div class="row">
             <div class="col-2"></div>
@@ -38,7 +38,7 @@ $recipeImage1Size = $recipeImage1['url'];
 
                 <img src="<?php echo $recipeImage1['url'] ?>" class="img-fluid recipe-image-1" alt="Responsive image">
 
-                <div class="hachures-blanches"></div>
+
 
                 <h2>Ingrédients</h2>
 

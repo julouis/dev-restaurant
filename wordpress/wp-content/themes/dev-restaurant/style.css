@@ -89,7 +89,7 @@ Theme Name: dev-restaurant
 	z-index: 0;
 	left: 0;
 	width: 100%;
-	background: linear-gradient(0deg, white 75%, black 25%);
+	background: linear-gradient(0deg, blue 75%, pink 25%);
 }
 
 .hachures-blanches {
@@ -97,7 +97,11 @@ Theme Name: dev-restaurant
 	transform: rotate(180deg);
 	background-repeat: repeat-x;
 	position: relative;
-	bottom: 150px;
+	top: 350px;
 	z-index: 1;
 	height: 10vh;
+}
+
+.recipe-image-1 {
+	z-index: 5;
 }
