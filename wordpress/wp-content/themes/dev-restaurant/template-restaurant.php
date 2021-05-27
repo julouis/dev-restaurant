@@ -14,19 +14,26 @@ $urlImgPresentation = $imagePresentation["url"];
             <div class=" banerTop text-white ">
                 
                     <?php //the_post_thumbnail() ?>
-                    <img src=" <?php the_post_thumbnail_url()?>" class="hero" alt="...">
-                    <div class=" ">
-                        <div class="card-img-overlay ">
-                            <div class="">
-                                <? get_header("h2") ?>
-                            </div>
-                            <div class="">
-                            
-                            </div>
-                            <div class="resto">
-                                <h3 > <?php the_field('slogan'); ?> </h3>
-                                <h1 class="card-title txt-size"><?php the_title(); ?></h1>
-                                <?php the_content();?>
+                    <div class="boxImgHero">
+                        <img src=" <?php the_post_thumbnail_url()?>" class="imgHero" alt="...">
+                    </div>
+                        
+                    <div class=" hero card-img-overlay ">
+                        <div class=" card-img-overlay container ">
+                            <div class="card-img-overlay p-5 ">
+                                <div class="">
+                                    <? get_header("h2") ?>
+                                </div>
+                                <div class="">
+                                
+                                </div>
+                                <div class="resto col-6">
+                                    <h3 > <?php the_field('slogan'); ?> </h3>
+                                    <h1 class="card-title txt-size"><?php the_title(); ?></h1>
+                                    <?php the_content();?>
+
+                                    <a href="" class="text-white"> view the full Menu</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -173,102 +180,107 @@ $urlImgPresentation = $imagePresentation["url"];
                             </div>
                         </div>
                     </div>
-                    <div class=" d-flex flex-wrap justify-content-center align-items-center p-5">                       
+                </div>
+            </div>
+            
+            <div class=" dicoverOurMenu">
+                <div class=" card d-flex flex-wrap justify-content-center align-items-center p-5">                       
+                    <?php
+                        // selection du post dicover our menu par l'id
+                        $the_query = new WP_Query(array('post_id' => "200" ));
+                        if($the_query -> have_posts()) :
+                            $the_query -> the_post();
 
-                        <?php
-                            // selection du post dicover our menu par l'id
-                            $the_query = new WP_Query(array('post_id' => "200" ));
-                            if($the_query -> have_posts()) :
-                                $the_query -> the_post();
+                        // image discover our menu 
+                        $imageDiscoverMenu1 = get_field('image_one_discover_menu');
+                        $urlImgDiscoverMenu1 = $imageDiscoverMenu1['url'];
 
-                            // image discover our menu 
-                            $imageDiscoverMenu1 = get_field('image_one_discover_menu');
-                            $urlImgDiscoverMenu1 = $imageDiscoverMenu1['url'];
+                        $imageDiscoverMenu2 = get_field('image_two_discover_menu');
+                        $urlImgDiscoverMenu2 = $imageDiscoverMenu2['url'];
 
-                            $imageDiscoverMenu2 = get_field('image_two_discover_menu');
-                            $urlImgDiscoverMenu2 = $imageDiscoverMenu2['url'];
+                        $imageDiscoverMenu3 = get_field('image_three_discover_menu');
+                        $urlImgDiscoverMenu3 = $imageDiscoverMenu3['url'];
 
-                            $imageDiscoverMenu3 = get_field('image_three_discover_menu');
-                            $urlImgDiscoverMenu3 = $imageDiscoverMenu3['url'];
-
-                            $imageDiscoverMenu4 = get_field('image_four_discover_menu');
-                            $urlImgDiscoverMenu4 = $imageDiscoverMenu4['url'];
-                        ?>   
-                        <div class=" text-center m-5 boxMenu " >
-                            <div class="row g-0 d-flex flex-wrap justify-content-center align-items-center  ">
-                                <div class="col imgDicorverMenu d-flex flex-wrap justify-centent-center align-items-center">
+                        $imageDiscoverMenu4 = get_field('image_four_discover_menu');
+                        $urlImgDiscoverMenu4 = $imageDiscoverMenu4['url'];
+                    ?>   
+                    <div class=" text-center m-5 boxMenu " >
+                        <div class="row g-0 d-flex flex-wrap justify-content-center align-items-center  ">
+                            <div class="col imgDicorverMenu d-flex flex-wrap justify-centent-center align-items-center">
+                                
+                                <img src="<?php echo $urlImgDiscoverMenu1 ?>" />
+                                <img src="<?php echo $urlImgDiscoverMenu2 ?>" />
+                                <img src="<?php echo $urlImgDiscoverMenu3 ?>" />
+                                <img src="<?php echo $urlImgDiscoverMenu4 ?>" />
+                                
+                            </div>
+                            <div class="col">
+                                <div class="card-body ">
+                                    <h5 class="card-title border"><?php the_field('slogan_discover_menu') ?> </h5>
+                                    <h4 class="card-title"><?php the_field('title_discover_menu') ?></h4>
+                                    <p class="card-text m-5"> <?php the_field('description_discover_menu') ?> </p>
+                                    <a href=""><button class="btn btn-dark" >view the full Menu</button></a>
                                     
-                                    <img src="<?php echo $urlImgDiscoverMenu1 ?>" />
-                                    <img src="<?php echo $urlImgDiscoverMenu2 ?>" />
-                                    <img src="<?php echo $urlImgDiscoverMenu3 ?>" />
-                                    <img src="<?php echo $urlImgDiscoverMenu4 ?>" />
-                                     
-                                </div>
-                                <div class="col">
-                                    <div class="card-body ">
-                                        <h5 class="card-title"><?php the_field('slogan_discover_menu') ?></h5>
-                                        <h4 class="card-title"><?php the_field('title_discover_menu') ?></h4>
-                                        <p class="card-text m-5"> <?php the_field('description_discover_menu') ?> </p>
-                                        <a href=""><button class="btn btn-dark" >view the full Menu</button></a>
-                                        
-                                    </div>
                                 </div>
                             </div>
-                        </div>                        
-                        <?php  endif; ?>           
+                        </div>
+                    </div>                        
+                    <?php  endif; ?>           
 
-                    </div>
-                    
                 </div>
             </div>
 
             <div class=" recipesMini d-flex flex-column align-items-center bg-light">
                 <img src="" alt="">
                 <div class="mt-5 text-center">
-                    <h5>Slogen</h5>
+                    <h5>Latest updated</h5>
                     <h4>Recipes Blog</h4>
                 </div>
-                <div class="carMiniRecipe d-flex flex-wrap justify-content-center">
-                    <?php
-                        $the_query = new WP_Query(array(
-                            'category_name' => 'recipes',
-                            'orderby'=> 'post_date', 
-                            'order' => 'DESC',
-                            'posts_per_page' => '4'
-                        ));
-                        
-                        if($the_query -> have_posts()) :
-                            while($the_query -> have_posts()) :
-                                $the_query -> the_post();
-                    ?>
-                        <div class=" recipeCard">
+                
+                <div class="latestRecipe">
+                    <div class="carMiniRecipe d-flex flex-wrap justify-content-center">
+                        <?php
+                            $the_query = new WP_Query(array(
+                                'category_name' => 'recipes',
+                                'orderby'=> 'post_date', 
+                                'order' => 'DESC',
+                                'posts_per_page' => '4'
+                            ));
                             
-                            <div class=" card m-3">
-                                <div class="imgRecipeCard">
-                                    <?php the_post_thumbnail(array(300,500)) ?>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text ">
-                                        <small class="text-muted">
-                                        <i class="fas fa-clock me-2 "></i>
-                                            Last updated 3 mins ago
-                                        </small>
-                                    </p>
-                                    <h3><?php the_title(); ?></h3>
-                                    <?php the_excerpt();?>
-                                    <div class="d-flex justify-content-around">
-                                        <p class="border"></p>
-                                        <hr class="border border-white flex-grow-1 ">
-                                        <a href="<?php the_permalink()?>" role="button" class="fw-bold text-uppercase text-dark" > Read More </a>
+                            if($the_query -> have_posts()) :
+                                while($the_query -> have_posts()) :
+                                    $the_query -> the_post();
+                        ?>
+                            <div class=" recipeCard">
+                                
+                                <div class=" recipeSingle card m-3">
+                                    <div class="imgRecipeCard">
+                                        <?php the_post_thumbnail(array(300,500)) ?>
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div>
+                                            <p class="card-text ">
+                                                <small class="text-muted">
+                                                <i class="fas fa-clock me-2 "></i>
+                                                    Last updated 3 mins ago
+                                                </small>
+                                            </p>
+                                            <h3><?php the_title(); ?></h3>
+                                            <?php the_excerpt();?>
+                                        </div>
+                                        <div class="d-flex justify-content-around">
+                                            <p class="border"></p>
+                                            <hr class="border border-white flex-grow-1 ">
+                                            <a href="<?php the_permalink()?>" role="button" class="fw-bold text-uppercase text-dark" > Read More </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                    <?php endwhile; endif; ?>
+                            
+                        <?php endwhile; endif; ?>
 
+                    </div>
                 </div>
-
             </div>
         <?php endwhile; ?>
     </div>
