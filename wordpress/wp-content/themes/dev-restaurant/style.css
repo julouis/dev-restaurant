@@ -41,30 +41,17 @@ Theme Name: dev-restaurant
 	background-color: transparent;
 }
 
-/* section restaurant */
+/* Template : restaurant */
 
-.allRestaurant{
+/* .allRestaurant{
 	
 	background-image: url(../../../wp-content/themes/dev-restaurant/assets/images/burger\ party.png);
-	/* background-color: lightgray; */
+	// background-color: lightgray;
 	background-size: contain;
-}
+} */
 
-.miniImgResto,
-.txtResto {
-	height: 400px;
-	width: 400px;
-}
+/* restaurant - global */
 
-.hero{
-	height: 100%;
-}
-
-
-.heroSize {
-	height: 800px;
-	overflow: hidden;
-}
 
 .resto > h1 {
 	font-size: 10rem;
@@ -74,37 +61,51 @@ Theme Name: dev-restaurant
 	font-size: 3rem;
 }
 
-/* resto - baner  */
+/* restaurant - baner  */
+
+.banerTop{
+	width: 100%;
+	overflow: hidden;
+	max-height: 800px;
+}
+
+.boxImgHero{
+	height: 100%;
+}
+
+.imgHero{
+	width: 100%;
+	min-height: 800px;
+}
+
+.hero{
+	
+	max-height: 830px;
+	background-color: rgba(0, 0, 0, 0.315);
+}
+
+/* restaurant - presentation */
+
 .cardPresentation{
 	max-width: 900px;
 	max-height: 300px;
 	overflow: hidden;
 }
 
-.banerTop{
-	max-height: 700px;
-	overflow: hidden;
-}
-
-.banerTop > img{
-	size: cover;
-}
-
-.banerFilter{
-	background-color: rgba(0, 0, 0, 0.315);
-	max-height: 700px;
-	overflow: hidden;
-}
-
-/* resto - Location */
-
+/* restaurant - Location */
 
 .mapLocation{
 	width: 100%;
 	height: 500px;
 }
 
-/* resto - Discover our menu */
+/* Booking a table*/
+.miniImgResto{
+	height: 400px;
+	width: 400px;
+}
+
+/* restaurant - Discover our menu */
 
 .imgDicorverMenu {
 	width: 50%;
@@ -127,7 +128,7 @@ Theme Name: dev-restaurant
 	max-width: 1000px;
 }
 
-/* resto - Last recipes */
+/* restaurant - Last recipes */
 .carMiniRecipe{
 	max-width: 1300px;
 }

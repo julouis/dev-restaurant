@@ -20,7 +20,6 @@
             while ($the_query->have_posts()) :
                 $the_query->the_post();
         ?>
-<<<<<<< HEAD
             
        
             <article class=" article d-flex  m-5">
@@ -35,23 +34,6 @@
                                 <h3><?php the_title(); ?></h3>
                                 <?php the_excerpt();?>
                                 <a href="<?php the_permalink()?>" role="button" class="btn btn-dark" > More infos</a>
-=======
-
-
-                <article class=" article d-flex  m-5">
-                    <div class="  m-3 container ">
-                        <div class="  d-flex flex-wrap justify-content-center align-items-center  ">
-                            <div class="col d-flex justify-content-center align-items-center overflow-visible miniImgResto ">
-                                <?php the_post_thumbnail(array(700, 700)) ?>
-                            </div>
-                            <div class="col">
-                                <div class="card-body d-flex flex-column justify-content-center align-items-center text-center bg-white p-5 txtResto ">
-                                    <h4><?php the_field('slogan'); ?></h4>
-                                    <h3><?php the_title(); ?></h3>
-                                    <?php the_excerpt(); ?>
-                                    <a href="<?php the_permalink() ?>" role="button" class="btn btn-dark"> More infos</a>
-                                </div>
->>>>>>> b2105cf3191846b074ddbe7bb40ad546aa2010bc
                             </div>
                         </div>
                     </div>

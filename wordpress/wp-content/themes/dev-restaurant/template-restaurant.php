@@ -14,19 +14,26 @@ $urlImgPresentation = $imagePresentation["url"];
             <div class=" banerTop text-white ">
                 
                     <?php //the_post_thumbnail() ?>
-                    <img src=" <?php the_post_thumbnail_url()?>" class="hero" alt="...">
-                    <div class=" ">
-                        <div class="card-img-overlay ">
-                            <div class="">
-                                <? get_header("h2") ?>
-                            </div>
-                            <div class="">
-                            
-                            </div>
-                            <div class="resto">
-                                <h3 > <?php the_field('slogan'); ?> </h3>
-                                <h1 class="card-title txt-size"><?php the_title(); ?></h1>
-                                <?php the_content();?>
+                    <div class="boxImgHero">
+                        <img src=" <?php the_post_thumbnail_url()?>" class="imgHero" alt="...">
+                    </div>
+                        
+                    <div class=" hero card-img-overlay ">
+                        <div class=" card-img-overlay container ">
+                            <div class="card-img-overlay p-5 ">
+                                <div class="">
+                                    <? get_header("h2") ?>
+                                </div>
+                                <div class="">
+                                
+                                </div>
+                                <div class="resto col-6">
+                                    <h3 > <?php the_field('slogan'); ?> </h3>
+                                    <h1 class="card-title txt-size"><?php the_title(); ?></h1>
+                                    <?php the_content();?>
+
+                                    <a href="" class="text-white"> view the full Menu</a>
+                                </div>
                             </div>
                         </div>
                     </div>
