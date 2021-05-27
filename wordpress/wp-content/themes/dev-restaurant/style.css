@@ -33,7 +33,8 @@ Theme Name: dev-restaurant
 }
 
 .orderBox {
-	background-color: aqua;
+	background-color: black;
+	color: white;
 	padding: 10px;
 }
 
@@ -85,23 +86,31 @@ Theme Name: dev-restaurant
 /* SINGLE POST RECIPE */
 
 .single-recipe-container {
-	position: static;
-	z-index: 0;
-	left: 0;
-	width: 100%;
-	background: linear-gradient(0deg, blue 75%, pink 25%);
-}
-
-.hachures-blanches {
-	background-image: url("./assets/images/hachures-blanches.png");
-	transform: rotate(180deg);
+	background-image: url(./assets/images/background-single-recipe.png);
 	background-repeat: repeat-x;
 	position: relative;
-	top: 350px;
-	z-index: 1;
-	height: 10vh;
+	z-index: -1;
+	bottom: 50px;
 }
 
-.recipe-image-1 {
-	z-index: 5;
+.recipe-content {
+	padding-top: 100px;
+}
+
+.date-banner {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+}
+
+.recipeTitle {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	color: white;
+}
+
+.recipeIntroText {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
 }

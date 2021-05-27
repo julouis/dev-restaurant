@@ -23,32 +23,43 @@ $recipeImage2 = get_field('image_plat_2');
 $recipeImage1 = get_field('image_plat_1');
 $recipeImage1Size = $recipeImage1['url'];
 
-
-
 ?>
+
+
+
 <div class="single-recipe-container">
-    <div class="hachures-blanches"></div>
-    <div class="container">
+
+    <div class="container recipe-content">
+        <div class="row date-banner">
+            <div class="col-2"></div>
+
+            <div class="col-2">Retour</div>
+            <div class="col-2">Date</div>
+            <div class="col-2"></div>
+            <div class="col-2">Type</div>
+
+            <div class="col-2"></div>
+        </div>
         <div class="row">
             <div class="col-2"></div>
             <div class="col-8">
-                <h1><?php echo $recipeTitle; ?></h1>
+                <h1 class="recipeTitle"><?php echo $recipeTitle; ?></h1>
 
-                <p><?php echo $recipeIntroText ?></p>
+                <p class="recipeIntroText"><?php echo $recipeIntroText ?></p>
 
-                <img src="<?php echo $recipeImage1['url'] ?>" class="img-fluid recipe-image-1" alt="Responsive image">
+                <img src="<?php echo $recipeImage1['url'] ?>" class="recipeImage1" alt="Responsive image">
 
 
 
-                <h2>Ingrédients</h2>
+                <h2 class="ingredientsText">Ingrédients</h2>
 
-                <?php echo $recipeIngredient ?>
+                <p class="recipeIngredient"><?php echo $recipeIngredient ?></p>
 
-                <img src="<?php echo $recipeImage2['url'] ?>" class="img-fluid" alt="Responsive image">
+                <img src="<?php echo $recipeImage2['url'] ?>" class="recipeImage2" alt="Responsive image">
 
-                <h2>Instructions</h2>
+                <h2 class="instructionsText">Instructions</h2>
 
-                <p><?php echo $recipeInstructions ?></p>
+                <p class="recipeInstructions"><?php echo $recipeInstructions ?></p>
             </div>
         </div>
         <div class="col-2"></div>
