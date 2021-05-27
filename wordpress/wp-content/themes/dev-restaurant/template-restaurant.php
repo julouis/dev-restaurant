@@ -235,47 +235,51 @@ $urlImgPresentation = $imagePresentation["url"];
                     <h5>Slogen</h5>
                     <h4>Recipes Blog</h4>
                 </div>
-                <div class="carMiniRecipe d-flex flex-wrap justify-content-center">
-                    <?php
-                        $the_query = new WP_Query(array(
-                            'category_name' => 'recipes',
-                            'orderby'=> 'post_date', 
-                            'order' => 'DESC',
-                            'posts_per_page' => '4'
-                        ));
-                        
-                        if($the_query -> have_posts()) :
-                            while($the_query -> have_posts()) :
-                                $the_query -> the_post();
-                    ?>
-                        <div class=" recipeCard">
+                
+                <div class="latestRecipe">
+                    <div class="carMiniRecipe d-flex flex-wrap justify-content-center">
+                        <?php
+                            $the_query = new WP_Query(array(
+                                'category_name' => 'recipes',
+                                'orderby'=> 'post_date', 
+                                'order' => 'DESC',
+                                'posts_per_page' => '4'
+                            ));
                             
-                            <div class=" card m-3">
-                                <div class="imgRecipeCard">
-                                    <?php the_post_thumbnail(array(300,500)) ?>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text ">
-                                        <small class="text-muted">
-                                        <i class="fas fa-clock me-2 "></i>
-                                            Last updated 3 mins ago
-                                        </small>
-                                    </p>
-                                    <h3><?php the_title(); ?></h3>
-                                    <?php the_excerpt();?>
-                                    <div class="d-flex justify-content-around">
-                                        <p class="border"></p>
-                                        <hr class="border border-white flex-grow-1 ">
-                                        <a href="<?php the_permalink()?>" role="button" class="fw-bold text-uppercase text-dark" > Read More </a>
+                            if($the_query -> have_posts()) :
+                                while($the_query -> have_posts()) :
+                                    $the_query -> the_post();
+                        ?>
+                            <div class=" recipeCard">
+                                
+                                <div class=" recipeSingle card m-3">
+                                    <div class="imgRecipeCard">
+                                        <?php the_post_thumbnail(array(300,500)) ?>
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div>
+                                            <p class="card-text ">
+                                                <small class="text-muted">
+                                                <i class="fas fa-clock me-2 "></i>
+                                                    Last updated 3 mins ago
+                                                </small>
+                                            </p>
+                                            <h3><?php the_title(); ?></h3>
+                                            <?php the_excerpt();?>
+                                        </div>
+                                        <div class="d-flex justify-content-around">
+                                            <p class="border"></p>
+                                            <hr class="border border-white flex-grow-1 ">
+                                            <a href="<?php the_permalink()?>" role="button" class="fw-bold text-uppercase text-dark" > Read More </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                    <?php endwhile; endif; ?>
+                            
+                        <?php endwhile; endif; ?>
 
+                    </div>
                 </div>
-
             </div>
         <?php endwhile; ?>
     </div>
