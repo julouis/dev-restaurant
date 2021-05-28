@@ -1,11 +1,11 @@
-<?php get_header() ?>
-
 <?php
 
 // Template Name: single-recipe
 // Template Post Type: post 
 
 ?>
+
+<!-- PUT ACF DATA INTO VARIABLES -->
 
 <?php
 
@@ -26,14 +26,18 @@ $recipeImage1Size = $recipeImage1['url'];
 ?>
 
 
+<!-- HEADER BLOCK WITH CSS PADDING -->
+<div class="single-recipe-header"> <?php get_header() ?> </div>
 
+
+<!-- MAIN CONTAINER -->
 <div class="single-recipe-container">
 
     <div class="container recipe-content">
         <div class="row date-banner">
             <div class="col-2"></div>
-
-            <div class="col-2">Retour</div>
+            <!-- TOP BANER, LINK WITH WP FUNCTION -->
+            <div class="col-2"> <a href="" class="back-recipe"><i class="fas fa-arrow-left"></i> Retour</a></div>
             <div class="col-2">Date</div>
             <div class="col-2"></div>
             <div class="col-2">Type</div>
@@ -65,4 +69,7 @@ $recipeImage1Size = $recipeImage1['url'];
         <div class="col-2"></div>
     </div>
 </div>
+
+
+
 <?php get_footer() ?>

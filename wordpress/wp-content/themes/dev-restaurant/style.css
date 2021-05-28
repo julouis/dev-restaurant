@@ -1,8 +1,3 @@
-/* 
-Theme Name: dev-restaurant
-
-*/
-
 .iconFooterSize {
 	width: 32px;
 	height: 32px;
@@ -36,8 +31,8 @@ Theme Name: dev-restaurant
 }
 
 /* Template : restaurant */
-.allRestaurant{
-	
+
+.allRestaurant {
 	background-image: url(../../../wp-content/themes/dev-restaurant/assets/images/burger\ party.png);
 	background-size: contain;
 }
@@ -51,39 +46,44 @@ Theme Name: dev-restaurant
 }
 
 /* restaurant - baner  */
-.banerTop{
+
+.banerTop {
 	width: 100%;
 	overflow: hidden;
 	max-height: 800px;
 }
-.boxImgHero{
+
+.boxImgHero {
 	height: 100%;
 }
-.imgHero{
+
+.imgHero {
 	width: 100%;
 	min-height: 800px;
 }
-.hero{
-	
+
+.hero {
 	max-height: 830px;
 	background-color: rgba(0, 0, 0, 0.315);
 }
 
 /* restaurant - presentation */
-.cardPresentation{
+
+.cardPresentation {
 	max-width: 900px;
 	max-height: 300px;
 	overflow: hidden;
 }
 
 /* restaurant - Location */
-.mapLocation{
+
+.mapLocation {
 	width: 100%;
 	height: 500px;
 }
 
 /* Booking a table*/
-.miniImgResto{
+.miniImgResto {
 	height: 400px;
 	width: 400px;
 }
@@ -93,10 +93,10 @@ Theme Name: dev-restaurant
 	width: 50%;
 }
 
-.imgDicorverMenu > img{
+.imgDicorverMenu > img {
 	height: 50%;
 	width: 50%;
-	padding: .3rem;
+	padding: 0.3rem;
 }
 
 .imgPresentation {
@@ -104,44 +104,54 @@ Theme Name: dev-restaurant
 	overflow: hidden;
 }
 
-.boxreservation, .boxMenu{
+.boxreservation,
+.boxMenu {
 	max-width: 1000px;
 }
 
 /* restaurant - Latest recipes */
-.carMiniRecipe{
+.carMiniRecipe {
 	max-width: 1300px;
 }
-.recipeCard{
+.recipeCard {
 	width: 25%;
 	overflow: hidden;
 }
-.recipeSingle{
+
+.recipeSingle {
 	height: 500px;
 }
-.imgRecipeCard > img{
+
+.imgRecipeCard > img {
 	width: 100%;
 }
 
 /* INDEX */
-.heroGray{
+
+.heroGray {
 	background-color: rgba(231, 229, 229, 0.678);
 }
-.cardHome{
+
+.cardHome {
 	max-width: 1000px;
 }
-.home > h1{
+
+.home > h1 {
 	font-size: 6rem;
 }
 
 /* SINGLE POST RECIPE */
 
+/* Navbar single recipe */
+
+.single-recipe-header {
+	padding-top: 50px;
+	background-color: black;
+}
+
 .single-recipe-container {
 	background-image: url(./assets/images/background-single-recipe.png);
 	background-repeat: repeat-x;
-	position: relative;
-	z-index: -1;
-	bottom: 50px;
 }
 
 .recipe-content {
@@ -155,13 +165,20 @@ Theme Name: dev-restaurant
 }
 
 .recipeTitle {
-	padding-top: 20px;
-	padding-bottom: 30px;
 	color: white;
 }
 
 .recipeIntroText {
 	padding-top: 20px;
 	padding-bottom: 20px;
+	color: white;
+}
+
+.single-recipe-header {
+	padding-top: 50px;
+	background-color: black;
+}
+.back-recipe {
+	text-decoration: none;
 	color: white;
 }
