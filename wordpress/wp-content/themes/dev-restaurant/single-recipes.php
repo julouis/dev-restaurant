@@ -1,5 +1,3 @@
-<?php get_header() ?>
-
 <?php
 
 // Template Name: single-recipe
@@ -25,7 +23,7 @@ $recipeImage1Size = $recipeImage1['url'];
 
 ?>
 
-
+<div class="single-recipe-header"> <?php get_header() ?> </div>
 
 <div class="single-recipe-container">
 

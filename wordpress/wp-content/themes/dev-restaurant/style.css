@@ -182,3 +182,8 @@ Theme Name: dev-restaurant
 	padding-bottom: 20px;
 	color: white;
 }
+
+.single-recipe-header {
+	padding-top: 50px;
+	background-color: black;
+}
