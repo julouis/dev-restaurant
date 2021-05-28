@@ -4,8 +4,6 @@ Template Name: Archives Recipes
 */
 get_header(); ?>
 
-<h1>archive-recipes.php</h1>
-
 <?php
 
 $the_query = new WP_Query(array('category_name' => 'Recipes'));

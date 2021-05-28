@@ -12,74 +12,27 @@ function dev_restaurant_supports()
 function dev_restaurant_register_assets()
 {
     wp_enqueue_style('style', get_stylesheet_uri(), NULL, microtime());
+    /* LINK BOOTSTRAP */
     wp_register_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css');
+    /* LINK FONTAWESOME */
     wp_register_style('fontawesome', 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
     wp_register_script('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', ['popper', 'jquery']);
     wp_register_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js');
     wp_register_script('jquery', 'https://code.jquery.com/jquery-3.3.1.slim.min.js');
 
-
+    /* ACTIVATE */
     wp_enqueue_style('fontawesome');
     wp_enqueue_style('bootstrap');
     wp_enqueue_script('bootstrap');
 }
 
 
-
-/* function dev_restaurant_init()
-{
-    register_taxonomy('recipe', 'post', [
-        'labels' => [
-            'name' => 'Recettes',
-        ]
-    ]);
-}
-
-
-add_action('init', 'dev_restaurant_init');
-
-
-function recipesPostType()
-{
-    $args = array(
-        'labels' => array(
-            'name' => 'Recipes',
-            'singular_name' => 'Recipe'
-        ),
-        'hierarchical' => true,
-        'menu_icon' => 'dashicons-food',
-        'public' => true,
-        'has_archive' => true,
-        'supports' => array('title', 'editor', 'thumbnail'),
-
-
-    );
-    register_post_type('recipes', $args);
-}
-
-add_action('init', 'recipesPostType');
-
-function recipesTaxonomy()
-{
-    $args = array(
-        'labels' => array(
-            'name' => 'Type de plat',
-            'singular_name' => 'Nom du plat',
-        ),
-        'public' => true,
-        'hierarchical' => false,
-
-    );
-    register_taxonomy('Recettes', array('recipes'), $args);
-}
-add_action('init', 'recipesTaxonomy'); */
-
-
-
 add_action('after_setup_theme', 'dev_restaurant_supports');
 add_action('wp_enqueue_scripts', 'dev_restaurant_register_assets');
 add_filter('wp_title', 'dev_restaurant_title');
 
+
+/* LINK VERS NAVWALKER.PHP */
 
 function register_navwalker()
 {
