@@ -65,4 +65,7 @@ $recipeImage1Size = $recipeImage1['url'];
         <div class="col-2"></div>
     </div>
 </div>
+
+
+
 <?php get_footer() ?>
