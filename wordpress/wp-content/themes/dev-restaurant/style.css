@@ -1,8 +1,3 @@
-/* 
-Theme Name: dev-restaurant
-
-*/
-
 .iconFooterSize {
 	width: 32px;
 	height: 32px;
@@ -182,6 +177,8 @@ Theme Name: dev-restaurant
 	padding-bottom: 20px;
 	color: white;
 }
+
+/* Alignement navbar single recipe */
 
 .single-recipe-header {
 	padding-top: 50px;
