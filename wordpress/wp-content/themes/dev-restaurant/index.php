@@ -9,6 +9,7 @@
 <div>
 
         <div class=" banerTop text-white ">
+            
             <?php
                 // selection du post dicover our menu par l'id
                 $the_query_home = new WP_Query(array('post_id' => "226" ));
@@ -28,10 +29,9 @@
                         <div class="">
                         
                         </div>
-                        <div class="resto col-6">
-                            <h3 > <?php //the_field('slogan'); ?> </h3>
-                            <h1 class="card-title txt-size"><?php //the_title(); ?></h1>
-                            <?php //the_content();?>
+                        <div class=" home col-6">
+                            <h2>For Happy day</h2>
+                            <h1>Enjoy happy meal</h1>
                             <a href="" class="text-white"> view the full Menu</a>
                         </div>
                     </div>
@@ -119,23 +119,23 @@
                 if($the_query -> have_posts()) :
                     $the_query -> the_post();
                 // image discover our menu 
-                $imageDiscoverMenu1 = get_field('image_one_discover_menu');
-                $urlImgDiscoverMenu1 = $imageDiscoverMenu1['url'];
-                $imageDiscoverMenu2 = get_field('image_two_discover_menu');
-                $urlImgDiscoverMenu2 = $imageDiscoverMenu2['url'];
-                $imageDiscoverMenu3 = get_field('image_three_discover_menu');
-                $urlImgDiscoverMenu3 = $imageDiscoverMenu3['url'];
-                $imageDiscoverMenu4 = get_field('image_four_discover_menu');
-                $urlImgDiscoverMenu4 = $imageDiscoverMenu4['url'];
+                $imageDiscoverMenuHome1 = get_field('image_one_discover_menu');
+                $urlImgDiscoverMenuHome1 = $imageDiscoverMenuHome1['url'];
+                $imageDiscoverMenuHome2 = get_field('image_two_discover_menu');
+                $urlImgDiscoverMenuHome2 = $imageDiscoverMenuHome2['url'];
+                $imageDiscoverMenuHome3 = get_field('image_three_discover_menu');
+                $urlImgDiscoverMenuHome3 = $imageDiscoverMenuHome3['url'];
+                $imageDiscoverMenuHome4 = get_field('image_four_discover_menu');
+                $urlImgDiscoverMenuHome4 = $imageDiscoverMenuHome4['url'];
             ?>   
             <div class=" text-center m-5 boxMenu " >
                 <div class="row g-0 d-flex flex-wrap justify-content-center align-items-center  ">
                     <div class="col imgDicorverMenu d-flex flex-wrap justify-centent-center align-items-center">
                         
-                        <img src="<?php echo $urlImgDiscoverMenu1 ?>" />
-                        <img src="<?php echo $urlImgDiscoverMenu2 ?>" />
-                        <img src="<?php echo $urlImgDiscoverMenu3 ?>" />
-                        <img src="<?php echo $urlImgDiscoverMenu4 ?>" />
+                        <img src="<?php echo $urlImgDiscoverMenuHome2 ?>" />
+                        <img src="<?php echo $urlImgDiscoverMenuHome1 ?>" />
+                        <img src="<?php echo $urlImgDiscoverMenuHome3 ?>" />
+                        <img src="<?php echo $urlImgDiscoverMenuHome4 ?>" />
                         
                     </div>
                     <div class="col">

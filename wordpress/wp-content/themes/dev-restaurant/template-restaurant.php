@@ -22,11 +22,9 @@ $urlImgPresentation = $imagePresentation["url"];
                         <div class=" card-img-overlay container ">
                             <div class="card-img-overlay p-5 ">
                                 <div class="">
-                                    <? get_header("h2") ?>
+                                    <? get_header() ?>
                                 </div>
-                                <div class="">
                                 
-                                </div>
                                 <div class="resto col-6">
                                     <h3 > <?php the_field('slogan'); ?> </h3>
                                     <h1 class="card-title txt-size"><?php the_title(); ?></h1>
