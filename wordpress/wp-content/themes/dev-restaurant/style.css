@@ -148,12 +148,17 @@
 
 /* SINGLE POST RECIPE */
 
+/* Navbar single recipe */
+
+.single-recipe-header {
+	z-index: 10;
+	padding-top: 50px;
+	background-color: black;
+}
+
 .single-recipe-container {
 	background-image: url(./assets/images/background-single-recipe.png);
 	background-repeat: repeat-x;
-	position: relative;
-	z-index: -1;
-	bottom: 50px;
 }
 
 .recipe-content {
@@ -167,8 +172,6 @@
 }
 
 .recipeTitle {
-	padding-top: 20px;
-	padding-bottom: 30px;
 	color: white;
 }
 
@@ -178,9 +181,7 @@
 	color: white;
 }
 
-/* Alignement navbar single recipe */
-
-.single-recipe-header {
-	padding-top: 50px;
-	background-color: black;
+.back-recipe {
+	text-decoration: none;
+	color: white;
 }
