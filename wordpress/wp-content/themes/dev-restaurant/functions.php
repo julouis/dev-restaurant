@@ -112,5 +112,5 @@ function wppln_last_posts($cat_id, $nbr_post, $excerpt)
     echo '</ul>';
 }
 
-// ACF
-if (!function_exists('get_field')) return;
+// ACF => fonction pour activer les champs des ACF.
+if (!function_exists('get_field')) {return;}

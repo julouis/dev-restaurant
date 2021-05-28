@@ -115,9 +115,9 @@
         <div class=" d-flex flex-wrap justify-content-center align-items-center p-5">                       
             <?php
                 // selection du post dicover our menu par l'id
-                $the_query = new WP_Query(array('post_id' => "200" ));
-                if($the_query -> have_posts()) :
-                    $the_query -> the_post();
+                $the_query_menu_home = new WP_Query(array('post_id' => "200" ));
+                if($the_query_menu_home -> have_posts()) :
+                    $the_query_menu_home -> the_post();
                 // image discover our menu 
                 $imageDiscoverMenuHome1 = get_field('image_one_discover_menu');
                 $urlImgDiscoverMenuHome1 = $imageDiscoverMenuHome1['url'];

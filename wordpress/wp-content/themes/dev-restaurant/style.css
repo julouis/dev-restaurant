@@ -7,43 +7,35 @@ Theme Name: dev-restaurant
 	width: 32px;
 	height: 32px;
 }
-
 .bg-blue {
 	background-color: blue;
 }
-
 .imgFooterSize {
 	width: 80px;
 	height: 80px;
 }
-
 .lightGrey {
 	color: lightgrey;
 }
 .navbar {
 	height: 50px;
 }
-
 .navbar-collapse {
 	justify-content: flex-end;
 }
-
 .menu-item {
 	justify-content: flex-end;
 }
-
 .orderBox {
 	background-color: black;
 	color: white;
 	padding: 10px;
 }
-
 .orderBox::after {
 	background-color: transparent;
 }
 
 /* Template : restaurant */
-
 .allRestaurant{
 	
 	background-image: url(../../../wp-content/themes/dev-restaurant/assets/images/burger\ party.png);
@@ -51,33 +43,26 @@ Theme Name: dev-restaurant
 }
 
 /* restaurant - global */
-
-
 .resto > h1 {
 	font-size: 10rem;
 }
-
 .resto > h3 {
 	font-size: 3rem;
 }
 
 /* restaurant - baner  */
-
 .banerTop{
 	width: 100%;
 	overflow: hidden;
 	max-height: 800px;
 }
-
 .boxImgHero{
 	height: 100%;
 }
-
 .imgHero{
 	width: 100%;
 	min-height: 800px;
 }
-
 .hero{
 	
 	max-height: 830px;
@@ -85,7 +70,6 @@ Theme Name: dev-restaurant
 }
 
 /* restaurant - presentation */
-
 .cardPresentation{
 	max-width: 900px;
 	max-height: 300px;
@@ -93,7 +77,6 @@ Theme Name: dev-restaurant
 }
 
 /* restaurant - Location */
-
 .mapLocation{
 	width: 100%;
 	height: 500px;
@@ -106,10 +89,8 @@ Theme Name: dev-restaurant
 }
 
 /* restaurant - Discover our menu */
-
 .imgDicorverMenu {
 	width: 50%;
-	
 }
 
 .imgDicorverMenu > img{
@@ -121,7 +102,6 @@ Theme Name: dev-restaurant
 .imgPresentation {
 	width: 100%;
 	overflow: hidden;
-	
 }
 
 .boxreservation, .boxMenu{
@@ -136,30 +116,23 @@ Theme Name: dev-restaurant
 	width: 25%;
 	overflow: hidden;
 }
-
 .recipeSingle{
 	height: 500px;
 }
-
 .imgRecipeCard > img{
 	width: 100%;
 }
 
 /* INDEX */
-
 .heroGray{
 	background-color: rgba(231, 229, 229, 0.678);
 }
-
 .cardHome{
 	max-width: 1000px;
 }
-
 .home > h1{
 	font-size: 6rem;
 }
-
-
 
 /* SINGLE POST RECIPE */
 
