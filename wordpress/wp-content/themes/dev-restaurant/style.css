@@ -151,6 +151,12 @@ Theme Name: dev-restaurant
 	max-width: 1000px;
 }
 
+.home > h1{
+	font-size: 6rem;
+}
+
+
+
 /* SINGLE POST RECIPE */
 
 .single-recipe-container {
