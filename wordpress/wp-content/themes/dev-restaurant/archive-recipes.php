@@ -2,7 +2,18 @@
 /*
 Template Name: Archives Recipes
 */
-get_header(); ?>
+?>
+
+
+<div class="archive-recipes-header"> <?php get_header(); ?> </div>
+
+<div class="archive-recipes-baner">
+
+    <h1 class="archive-recipes-baner-text-1">The Chef's selection</h1>
+
+    <h1 class="archive-recipes-baner-text-2">RECIPES BLOG</h1>
+</div>
+
 
 <?php
 
