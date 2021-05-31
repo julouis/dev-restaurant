@@ -65,25 +65,25 @@ $recipeImage1Size = $recipeImage1['url'];
 
                     <div class="col-2">
 
-                        <div class=" d-flex socialNetwork p-2 col flex-column align-items-sm-center  justify-content-xl-start align-items-xl-start  ">
+                        <div class="d-flex socialNetwork p-2 col flex-column align-items-sm-center  justify-content-xl-start align-items-xl-start  ">
                             <!-- facebook -->
-                            <i class="fab fa-facebook-f d-flex justify-content-center align-items-center rounded-circle iconFooterSize m-1 bg-blue"></i>
+                            <i class="text-white fab fa-facebook-f d-flex justify-content-center align-items-center rounded-circle iconFooterSize m-1 bg-blue"></i>
 
                             <!-- twitter -->
                             <div class=" ">
-                                <i class="fab fa-twitter d-flex justify-content-center align-items-center bg-info rounded-circle iconFooterSize m-1"></i>
+                                <i class="text-white fab fa-twitter d-flex justify-content-center align-items-center bg-info rounded-circle iconFooterSize m-1"></i>
 
                             </div>
 
                             <!-- instagram -->
                             <div class="">
-                                <i class="fab fa-instagram d-flex justify-content-center align-items-center bg-danger rounded-circle iconFooterSize m-1 "></i>
+                                <i class="text-white fab fa-instagram d-flex justify-content-center align-items-center bg-danger rounded-circle iconFooterSize m-1 "></i>
 
                             </div>
 
                             <!-- linkedin -->
                             <div class="">
-                                <i class="fab fa-linkedin-in d-flex justify-content-center align-items-center bg-primary rounded-circle iconFooterSize m-1 "></i>
+                                <i class="text-white fab fa-linkedin-in d-flex justify-content-center align-items-center bg-primary rounded-circle iconFooterSize m-1 "></i>
 
                             </div>
 
