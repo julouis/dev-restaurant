@@ -196,3 +196,38 @@
 	padding-top: 10px;
 	padding-bottom: 20px;
 }
+
+/* ARCHIVE RECIPE */
+
+.archive-recipes-header .navbar {
+	position: relative;
+	top: 40px;
+	z-index: 100;
+}
+
+.archive-recipes-baner {
+	padding-left: 100px;
+	z-index: 1;
+	position: relative;
+	top: -50px;
+	height: 65vh;
+	background-image: url();
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("./assets/images/resto1.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.archive-recipes-baner-text-1 {
+	padding-top: 150px;
+	color: white;
+	font-size: 3.5rem;
+}
+
+.archive-recipes-baner-text-2 {
+	padding-top: 20px;
+	color: white;
+	font-size: 5rem;
+	font-weight: 900;
+}
