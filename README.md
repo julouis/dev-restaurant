@@ -23,4 +23,4 @@ Délai: 3semaines
 ## Projet déployé: 
 Lien Github : https://github.com/julouis/dev-restaurant
 
-Lien web: 
+Lien web: http://dev-restaurant.byethost9.com
