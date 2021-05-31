@@ -6,6 +6,9 @@
 $imagePresentation = get_field('image_presentation_restaurant');
 $urlImgPresentation = $imagePresentation["url"];
 
+$imagePresentation2 = get_field('image_presentation_restaurant_2');
+$urlImgPresentation2 = $imagePresentation2["url"];
+
 
 ?>
 
@@ -26,7 +29,7 @@ $urlImgPresentation = $imagePresentation["url"];
                                 </div>
                                 
                                 <div class="resto col-6">
-                                    <h3 > <?php the_field('slogan'); ?> </h3>
+                                    <h3 > <?php the_field('slogan_restaurant'); ?> </h3>
                                     <h1 class="card-title txt-size"><?php the_title(); ?></h1>
                                     <?php the_content();?>
 
@@ -44,41 +47,32 @@ $urlImgPresentation = $imagePresentation["url"];
                     
                     <div class="m-5">
                         <p> <?php the_field('slogan_presentation') ?> </p>
-                        <h3 class="">Presentation</h3>
+                        <h3 class="text-uppercase">Presentation</h3>
                     </div>
                     
                     
                     <div class="cardPresentation card text-center m-5 " >
                             <div class="row g-0">
-                                <div class="col-6 imgPresentation">
-                                    <img src="<?php echo $urlImgPresentation; ?>" class=""/>
-                                    
+                                <div class="col-6 imgPresentationBox">
+                                    <img src="<?php echo $urlImgPresentation; ?>" class="imgPres"/>
                                 </div>
-                                <div class="col-6 p-5">
-                                    <div class="card-body">
-                                        <h5 class="card-title"><?php the_field('slogan_presentation_restaurant') ?></h5>
-                                        <h4 class="card-title"><?php the_field('title_presentation_restaurant') ?></h4>
-                                        <p class="card-text"> <?php the_field('description_presentation_restaurant') ?> </p>
-                                        
-                                    </div>
+                                <div class="col-6 p-5 card-body bg-white d-flex flex-column justify-content-center">
+                                    <h5 class="card-title"><?php the_field('slogan_presentation_restaurant') ?></h5>
+                                    <h4 class="card-title m-3"><?php the_field('title_presentation_restaurant') ?></h4>
+                                    <p class="card-text"> <?php the_field('description_presentation_restaurant') ?> </p>
                                 </div>
                             </div>
                     </div>
                 
                     <div class="cardPresentation card text-center m-5 " >
                             <div class="row g-0">
-                                <div class="col-6 p-5">
-                                    <div class="card-body">
-                                        <h5 class="card-title"><?php the_field('slogan_presentation_restaurant') ?></h5>
-                                        <h4 class="card-title"><?php the_field('title_presentation_restaurant') ?></h4>
-                                        <p class="card-text"> <?php the_field('description_presentation_restaurant') ?> </p>
-                                        
-                                    </div>
+                                <div class="col-6 p-5 card-body bg-white d-flex flex-column justify-content-center">
+                                    <h5 class="card-title"><?php the_field('slogan_presentation_restaurant_2') ?></h5>
+                                    <h4 class="card-title m-3"><?php the_field('title_presentation_restaurant_2') ?></h4>
+                                    <p class="card-text"> <?php the_field('description_presentation_restaurant_2') ?> </p>
                                 </div>
-                                <div class="col-6">
-                                
-                                    <img src="<?php the_field('image_presentation_restaurant'); ?>" />
-                                    
+                                <div class="col-6 imgPresentationBox">
+                                    <img src="<?php echo $urlImgPresentation2; ?>" class="imgPres"/>
                                 </div>
                             </div>
                     </div>
@@ -90,8 +84,10 @@ $urlImgPresentation = $imagePresentation["url"];
             </div>
 
             <div class="location">
-                
-                <h3>Location</h3>
+                <div class="text-center m-5">
+                    <p class="">Find Us</p>
+                    <h3 class="uppercase" >Location</h3>
+                </div>
                 <div class="bg-success ">
                     <?php //the_field('location'); ?>    
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80996.1150898469!2d5.528883916493495!3d50.624727857791925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f74b8eacfcfb%3A0x40099ab2f4d6b40!2zTGnDqGdl!5e0!3m2!1sen!2sbe!4v1622024892669!5m2!1sen!2sbe" class="mapLocation"></iframe>
@@ -103,8 +99,10 @@ $urlImgPresentation = $imagePresentation["url"];
                 <img src="" alt="">
 
                 <div class="d-flex flex-column justify-centent-center align-items-center p-5">
-
-                    <h3 class=" m-5">Reserve a table</h3>
+                    <div class="text-center m-5">
+                        <p class="">Submit Information to Place Order</p>
+                        <h3 class="uppercase" >Reserve a table</h3>
+                    </div>
                     <div class=" boxReservation m-3 " >
                         <div class="  d-flex flex-wrap justify-content-center align-items-center  ">
                             <div class="col d-flex justify-content-center align-items-center overflow-visible miniImgResto ">

@@ -44,6 +44,9 @@
 .resto > h3 {
 	font-size: 3rem;
 }
+.resto > h4 {
+	font-weight: bold;
+}
 
 /* restaurant - baner  */
 
@@ -63,7 +66,7 @@
 }
 
 .hero {
-	max-height: 830px;
+	max-height: 800px;
 	background-color: rgba(0, 0, 0, 0.315);
 }
 
@@ -71,8 +74,14 @@
 
 .cardPresentation {
 	max-width: 900px;
-	max-height: 300px;
+	max-height: 400px;
 	overflow: hidden;
+}
+.imgPresentationBox > img {
+	overflow: hidden;
+}
+.imgPres{
+height: 400px;
 }
 
 /* restaurant - Location */
@@ -126,8 +135,42 @@
 	width: 100%;
 }
 
-/* INDEX */
+/* HOME */
 
+/* home - intro */
+.home > h1 {
+	font-size: 6rem;
+}
+
+/* home - mini cards */
+.miniCardSingle{
+	width: 400px;
+	height: 400px;
+	border-radius: 50px 50px 0 0;
+	background-color: white;
+}
+.miniCardIcon{
+	height: 100px;
+	width: 100px;
+}
+
+.miniCardIcon > i {
+	font-size: 4rem;
+}
+
+.miniCardsParent{
+	/* position: relative; */
+	min-height: 400px;
+}
+
+.miniCards{
+	
+	top: 700px;
+	
+}
+
+
+/* home - restaurant */
 .heroGray {
 	background-color: rgba(231, 229, 229, 0.678);
 }
@@ -136,9 +179,7 @@
 	max-width: 1000px;
 }
 
-.home > h1 {
-	font-size: 6rem;
-}
+
 
 /* SINGLE POST RECIPE */
 
