@@ -9,6 +9,8 @@
 
 <?php
 
+$recipeDate = get_the_date();
+
 $recipeTitle = get_field('nom_de_la_recette');
 $recipeType = get_field('type_de_cuisine');
 $recipeIntroText = get_field('resume_de_la_recette');
@@ -17,7 +19,12 @@ $recipeIntroText = get_field('resume_de_la_recette');
 $recipeIngredient = get_field('ingredients');
 $recipeNumberOfPerson = get_field('pour_combien_de_personnes');
 $recipeCookingMinutes = get_field('duree_de_preparation');
-$recipeInstructions = get_field('instructions');
+
+$recipeInstructions1 = get_field('instructions_1');
+$recipeInstructions2 = get_field('instructions_2');
+$recipeInstructions3 = get_field('instructions_3');
+$recipeInstructions4 = get_field('instructions_4');
+
 $recipeImage2 = get_field('image_plat_2');
 
 $recipeImage1 = get_field('image_plat_1');
@@ -38,9 +45,9 @@ $recipeImage1Size = $recipeImage1['url'];
             <div class="col-2"></div>
             <!-- TOP BANER, LINK WITH WP FUNCTION -->
             <div class="col-2"> <a href="" class="back-recipe"><i class="fas fa-arrow-left"></i> Retour</a></div>
-            <div class="col-2">Date</div>
+            <div class="col-2"><?php echo $recipeDate ?></div>
             <div class="col-2"></div>
-            <div class="col-2">Type</div>
+            <div class="col-2"><i class="fas fa-utensils"></i> <?php echo $recipeType ?></div>
 
             <div class="col-2"></div>
         </div>
@@ -57,13 +64,24 @@ $recipeImage1Size = $recipeImage1['url'];
 
                 <h2 class="ingredientsText">Ingrédients</h2>
 
+                <p>For <? echo $recipeNumberOfPerson ?> people - preparation <?php echo $recipeCookingMinutes ?> minutes</p>
+
                 <p class="recipeIngredient"><?php echo $recipeIngredient ?></p>
 
-                <img src="<?php echo $recipeImage2['url'] ?>" class="recipeImage2" alt="Responsive image">
+
 
                 <h2 class="instructionsText">Instructions</h2>
 
-                <p class="recipeInstructions"><?php echo $recipeInstructions ?></p>
+                <p class="instructions_1"><?php echo $recipeInstructions1 ?></p>
+
+                <p class="instructions_2"><?php echo $recipeInstructions2 ?></p>
+
+                <img src="<?php echo $recipeImage2['url'] ?>" class="recipeImage2" alt="Responsive image">
+
+                <p class="instructions_3"><?php echo $recipeInstructions3 ?></p>
+
+                <p class="instructions_4"><?php echo $recipeInstructions4 ?></p>
+
             </div>
         </div>
         <div class="col-2"></div>
