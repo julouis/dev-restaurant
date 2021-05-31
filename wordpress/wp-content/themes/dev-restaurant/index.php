@@ -8,38 +8,57 @@
         ?> -->
 <div>
 
-        <div class=" banerTop text-white ">
-            
-            <?php
-                // selection du post dicover our menu par l'id
-                $the_query_home = new WP_Query(array('post_id' => "226" ));
-                if($the_query_home -> have_posts()) :
-                    $the_query_home -> the_post();
-                
-            ?> 
-            <div class="boxImgHero">
-                <img src=" <?php the_post_thumbnail_url()?>" class="imgHero" alt="...">
-            </div>       
-            <div class=" hero card-img-overlay ">
-                <div class=" card-img-overlay container ">
-                    <div class="card-img-overlay p-5 ">
-                        <div class="">
-                            <?php get_header() ?>
-                        </div>
-                        <div class="">
-                        
-                        </div>
-                        <div class=" home col-6">
-                            <h2>For Happy day</h2>
-                            <h1>Enjoy happy meal</h1>
-                            <a href="" class="text-white"> view the full Menu</a>
-                        </div>
+    <div class=" banerTop text-white ">
+        
+        <?php
+            // selection du post dicover our menu par l'id
+            $the_query_home = new WP_Query(array('post_id' => "226" ));
+            if($the_query_home -> have_posts()) :
+                $the_query_home -> the_post();
+        ?> 
+        <div class="boxImgHero">
+            <img src=" <?php the_post_thumbnail_url()?>" class="imgHero" alt="...">
+        </div>       
+        <div class="  card-img-overlay ">
+            <div class=" card-img-overlay container ">
+                <div class="card-img-overlay p-5 ">
+                    <div class="">
+                        <?php get_header() ?>
+                    </div>
+                    <div class=" home col-6 mt-5 pt-5">
+                        <h2>For Happy day</h2>
+                        <h1>Enjoy happy meal</h1>
+                        <a href="" class="text-white"> view the full Menu</a>
                     </div>
                 </div>
-            </div> 
+            </div>
+        </div> 
+        <?php endif ?>
+    </div>
 
-            <?php endif ?>
+    <div class=" Cards m-5">
+        <div class=" container miniCardsParent">
+            <div class="miniCards d-flex align-items-center flex-wrap">
+                <div class="miniCardSingle p-4 text-center shadow d-flex flex-column m-3 justify-content-center">
+                    <i class="far fa-thumbs-up fa-5x "></i>
+                    <h6 class="text-uppercase m-5"> Quality foods</h6>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lorem pretium, iaculis enim non, elementum tortor. Mauris sed semper. </p>
+                </div>
+                <div class="miniCardSingle p-4 text-center shadow d-flex flex-column m-3 justify-content-center">
+                    <i class="fas fa-truck fa-5x "></i> 
+                    <h6 class="text-uppercase m-5"> Fastest delivery</h6>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lorem pretium, iaculis enim non, elementum tortor. Mauris sed semper. </p>
+                </div>
+                <div class="miniCardSingle p-4 text-center shadow d-flex flex-column m-3 justify-content-center">
+                    <i class="fas fa-pizza-slice fa-5x "></i>
+                    <h6 class="text-uppercase m-5"> Original recipes</h6>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget lorem pretium, iaculis enim non, elementum tortor. Mauris sed semper. </p>
+                </div>
+            </div>
+            
         </div>
+    </div>
+
 
     <div class="bookingHome p-5 ">
         <img src="" alt="">
